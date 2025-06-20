@@ -550,9 +550,11 @@ aside#aside_menu{
 }
 .search_wrap .search i{
   font-size: 22px;
+  animation: blink_i 1s infinite;
 }
 .search_wrap .user i{
   margin-right: 5px;
+  animation: blink_i 1s infinite;
 }
 .cart_wrap .cart img{
   width: 24px;
@@ -1440,6 +1442,11 @@ ul.utilMenu li{
 @keyframes blink{
   0%{opacity: 0;}
   100%{opacity: 1;}
+}
+@keyframes blink_i{
+0%{opacity: 1;}
+50%{opacity: 0;}
+100%{opacity: 1;}
 }
 
 /**************************************/
