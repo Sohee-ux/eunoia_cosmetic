@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EUNOIA | 새로움의 시작</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="https://img.icons8.com/isometric/50/bookmark-ribbon.png">
+  <!-- font-awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <section id="main">
+    <!-- 왼쪽 검색창 영역 -->
+    <aside id="left_wrap">
+      <div class="left_fix">
+        <a href="/">
+          <img src="/image/logo.png" alt="logo">
+        </a>
+        <div class="txt_box">
+          <h3>아름다움을 생각하는 유노이아</h3>
+        </div>
+      </div>
+      <div class="left_search">
+        <form id="search_bar_form" method="get" target="_self">
+          <input value type="hidden" id="left_banner_action" name="left_banner_action">
+          <div class="xans_element xans_layout xans_layout_searchheader">
+            <fieldset>
+              <legend>검색</legend>
+              <input value type="text" id="input_keyword" name="input_keyword" fw-filter fw-label="검색어" fw-msg class="input_type_text" placeholder onmousedown="SEARCH_BANNER.clickSearch_from(this)">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </fieldset>
+          </div>
+        </form>
+        <div class="als_container" id="left_keyword">
+          <div class="xans_element">
+            <ul class="als_wrapper">
+              <li class="als_item xans_record">
+                <a href="/">
+                  <span class="number">1</span>
+                  <span class="span_keyword">BEST 뷰티 라인</span>
+                </a>
+              </li>
+              <li class="als_item xans_record">
+                <a href="/">
+                  <span class="number">2</span>
+                  <span class="span_keyword">건조한 환절기에 딱! 스킨케어</span>
+                </a>
+              </li>
+              <li class="als_item xans_record">
+                <a href="/">
+                  <span class="number">3</span>
+                  <span class="span_keyword">꾸준히 사랑받는 스킨케어</span>
+                </a>
+              </li>
+              <li class="als_item xans_record">
+                <a href="/">
+                  <span class="number">4</span>
+                  <span class="span_keyword">나에게 맞는 클렌징 솔루션</span>
+                </a>
+              </li>
+              <li class="als_item xans_record">
+                <a href="/">
+                  <span class="number">5</span>
+                  <span class="span_keyword">1+1 혜택 이벤트</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <aside id="right_wrap">
+      <div class="right_img">
+        <div class="right_img_area">
+          <a href="/">
+            <img src="/image/right_img.jpg" alt="right_img">
+          </a>
+        </div>
+        <div class="right_txt">
+          <h2>아름다워지는 뷰티 케어</h2>
+          <p>유노이아에서 아름다움을 찾으세요</p>
+          <div class="right_sns">
+            <div class="sns">
+              <div class="item">
+                <a href="/">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </div>
+              <div class="item">
+                <a href="/">
+                  <i class="fa-solid fa-b"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!----------------------- wrap -->
+    <section id="wrap">
+      <div class="top_banner swiper">
+        <ul class="swiper_wrapper">
+          <li class="swiper_slide">
+            <a href="/">새로운 클렌징 솔루션을 경험해 보세요</a>
+          </li>
+          <li class="swiper_slide">
+            <a href="/">신규 회원가입 시, 다양한 혜택이 가득해요</a>
+          </li>
+          <li class="swiper_slide">
+            <a href="/">1+1 혜택 이벤트 한정수량 놓치지 마세요 </a>
+          </li>
+          <li class="swiper_slide">
+            <a href="/">새로운 클렌징 솔루션을 경험해 보세요</a>
+          </li>
+        </ul>
+        <span class="top_close_btn">
+          <a href="#none">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </span>
+      </div>
+      <!-- header [위아래 고정된 메뉴들, 햄버거 사이드 메뉴 포함] -->
+      <div id="header">
+        <!-- 최상단 메뉴바 [즐겨찾기, 로그인, 햄버거버튼, 상단로고]-->
+        <div class="header_inner">
+          <div class="header_top_area">
+            <!-- 햄버거 버튼 -->
+            <div class="header_top_side">
+              <button type="button" class="btn_cate">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <!--------------------------- aside_menu -->
+              <aside id="aside_menu" class="xans-element">
+                <div class="aside_top_section">
+                  <div class="aside_member">
+                    <p>
+                      <a href="/">
+                        로그인이 필요합니다.
+                        <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </p>
+                    <p>
+                      <a href="/">
+                        회원가입
+                        <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="xans_myshop">
+                  <span class="icon">
+                    <a href="/html/member_sub.html">
+                      <i class="fa-regular fa-user"></i>
+                      마이페이지
+                    </a>
+                  </span>
+                  <span class="icon">
+                    <a href="/">
+                      <i class="fa-regular fa-heart"></i>
+                      관심상품(0)
+                    </a>
+                  </span>
+                  <span class="icon">
+                    <a href="/">
+                      <i class="fa-regular fa-clock"></i>
+                      최근본상품(0)
+                    </a>
+                  </span>
+                  <span class="icon">
+                    <a href="/html/search_sub.html">
+                     <i class="fa-regular fa-file-lines"></i>
+                      주문조회
+                    </a>
+                  </span>
+                </div>
+                <div class="aside_top">
+                  <div class="top_logo">
+                    <img src="/image/logo.png" alt="logo">
+                  </div>
+                  <div class="top_info">
+                    <span>회원가입하고 다양한 혜택 받으세요!</span>
+                  </div>
+                    <div class="member">
+                      <ul>
+                        <li><a href="/html/member_sub.html">1초 회원가입</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="aside_recomm">
+                  <div class="cate_title">추천 키워드</div>
+                  <ul class="banner_area_keyword">
+                    <li class="banner"><a href="/html/product_sub.html">스킨</a></li>
+                    <li class="banner"><a href="/html/product_sub.html">보습제품</a></li>
+                    <li class="banner"><a href="/html/product_sub.html">클렌징</a></li>
+                    <li class="banner"><a href="/html/product_sub.html">아이라이너</a></li>
+                    <li class="banner"><a href="/html/product_sub.html">아이섀도우</a></li>
+                    <li class="banner"><a href="/html/product_sub.html">웜톤 립</a></li>
+                    <li class="banner"><a href="/html/product_sub.html">쿨톤 립</a></li>
+                    <li class="banner"><a href="/html/product_sub.html">마스크팩</a></li>
+                  </ul>
+                </div>
+                <div class="main_cate">
+                  <div class="cate_title">전체 카테고리</div>
+                  <div class="tab_category" id="slideCateList">
+                    <ul class="categoryList cboth">
+                      <li>
+                        <a href="/html/product_sub.html" class="view">
+                          <img src="https://ecudemo276124.cafe24.com/web/upload/goodymall/kr/main/icon01.jpg" alt="category01">립/립밤
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/html/product_sub.html" class="view">
+                          <img src="http://127.0.0.1:5500/image/icon02.jpg" alt="category01">마스카라
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/html/product_sub.html" class="view">
+                          <img src="https://ecudemo276124.cafe24.com/web/upload/goodymall/kr/main/icon03.jpg" alt="category01">아이섀도우
+                        </a>  
+                      </li>
+                      <li>
+                        <a href="/html/product_sub.html" class="view">
+                          <img src="https://ecudemo276124.cafe24.com/web/upload/goodymall/kr/main/icon04.jpg" alt="category01">아이라이너
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/html/product_sub.html" class="view">
+                          <img src="https://ecudemo276124.cafe24.com/web/upload/goodymall/kr/main/icon06.jpg" alt="category01">메이크업 툴
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/html/product_sub.html" class="view">
+                          <img src="https://ecudemo276124.cafe24.com/web/upload/goodymall/kr/main/icon01.jpg" alt="category01">폼 클렌저
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/html/product_sub.html" class="view">
+                          <img src="https://ecudemo276124.cafe24.com/web/upload/goodymall/kr/main/icon07.jpg" alt="category01">수분크림
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/html/product_sub.html" class="view">
+                          <img src="https://ecudemo276124.cafe24.com/web/upload/goodymall/kr/main/icon08.jpg" alt="category01">시카크림
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/html/product_sub.html" class="view">
+                          <img src="https://ecudemo276124.cafe24.com/web/upload/goodymall/kr/main/icon09.jpg" alt="category01">수분로션
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/html/product_sub.html" class="last_view">
+                          <i class="fa-solid fa-ellipsis"></i> 전체상품
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="side_cs">
+                  <ul>
+                    <li>
+                      <h3>고객센터</h3>
+                      <p class="tel">031-628-6380</p>
+                    </li>
+                    <li>
+                      <p class="time">월 ~ 금 :  09 : 00 ~ 18 : 00 ( * 토, 일, 공휴일 휴무 )</p>
+                    </li>
+                  </ul>
+                </div>
+                <!--
+                <div class="event_banner">
+                  <h3 class="event_banner_h">진행중인 이벤트</h3>
+                  <div class="img_zoom round">
+                    <a href="/">
+                      <img src="/image/event_banner01.jpg" alt="event_banner01">
+                    </a>
+                    <div class="txt">
+                      <h3>SPECIAL GIFT 이벤트!</h3>
+                      <p>온라인에서 만날 수 있는 특별한 혜택</p>
+                    </div>
+                  </div>
+                </div>
+                -->
+                <a href="#none" class="btn_close">
+                  <i class="fa-solid fa-xmark"></i>
+                </a>
+              </aside>
+              <div id="dim_slider"></div>
+            </div>
+            <h1 class="header_logo">
+              <a href="/html/index.html">
+                <img src="/image/logo.png" alt="header_logo">
+              </a>
+            </h1>
+            <div class="header_top_rigth_icon">
+              <div class="search_wrap">
+                <span class="search user">
+                  <a href="/html/member_sub.html">
+                    <i class="fa-regular fa-user"></i>
+                  </a>
+                </span>
+              </div>
+              <div class="search_wrap">
+                <span class="search">
+                  <a href="/html/search_sub.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </span>
+              </div>
+              <div class="cart_wrap">
+                <div class="cart">
+                  <a href="/">
+                    <img src="/image/cart_shopping.svg" alt="">
+                    <span class="count">0</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 최상단 카테고리 메뉴바 -->
+         <div id="menu_fix">
+          <div class="menu_inner">
+            <div class="menu_top_cate">
+              <div class="menu_top_area" id="fixed_menu">
+                <div class="cate">
+                  <ul>
+                    <li><a href="/">인기 TOP10</a></li>
+                    <li><a href="/">신상품</a></li>
+                    <li><a href="/">라이브</a></li>
+                    <li><a href="/">타임특가</a></li>
+                    <li><a href="/">이벤트</a></li>
+                    <li><a href="/">커뮤니티</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+         <div id="go_btn">
+          <ul class="box">
+            <li>
+              <div class="side">
+                <button type="button" class="btn_cate">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+              <p>카테고리</p>
+            </li>
+            <li>
+              <div class="side">
+                <button type="button" class="btn_cate">
+                  <i class="fa-regular fa-user"></i>
+                </button>
+              </div>
+              <p>마이페이지</p>
+            </li>
+            <li>
+              <div class="side">
+                <button type="button" class="btn_cate">
+                  <i class="fa-solid fa-house-chimney"></i>
+                </button>
+              </div>
+              <p>홈</p>
+            </li>
+            <li>
+              <div class="side">
+                <button type="button" class="btn_cate">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <p>관심상품</p>
+            </li>
+            <li>
+              <div class="side">
+                <button type="button" class="btn_cate">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <p>최근 본 상품</p>
+            </li>
+          </ul>
+         </div>
+      </div>
+      <!-- visual -->
+       <div id="visual" class="full_with">
+        <div class="swiper_container Swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" role="group" aria-label="1/5">
+              <div class="img" id="img_bg">
+                <div class="layer">
+                    <h2>1+1 혜택 이벤트</h2>
+                    <span>전상품 1+1 이벤트 <br> 한정수량으로 놓치지 마세요.</span>
+                  <button type="button">MORE</button>
+                </div>
+                <img src="/image/visual_slide01.avif" alt="slide04">
+              </div>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="2/5">
+              <div class="img">
+                <div class="layer">
+                    <h2>클렌징 솔루션</h2>
+                    <span>순한 저자극 클렌징 워터 <br> 세안 후에도 당김 걱정 NO!</span>
+                    <button type="button">MORE</button>
+                </div>
+                <img src="/image/visual_slide02.avif" alt="slide04">
+              </div>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="3/5">
+              <div class="img">
+                <div class="layer">
+                    <h2>EUNOIA 장벽 수분</h2>
+                    <span>끈적이지 않는 최상의 산뜻함 <br> 스킨케어의 패러다임</span>
+                    <button type="button">MORE</button>
+                </div>
+                <img src="/image/visual_slide03.avif" alt="slide04">
+              </div>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="4/5">
+              <div class="img">
+                <div class="layer">
+                    <h2>당신의 클렌징은?</h2>
+                    <span>전문가의 컨설팅을<br>지금 바로 만나보세요!</span>
+                    <button type="button">MORE</button>
+                </div>
+                <img src="/image/visual_slide04.avif" alt="slide04">
+              </div>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="5/5">
+              <div class="img">
+                <div class="layer">
+                    <h2>코스메틱은 유노이아</h2>
+                    <span>아름다움을 생각합니다. <br> 건강한 스킨케어 솔루션</span>
+                    <button type="button">MORE</button>
+                </div>
+                <img src="/image/visual_slide05.avif" alt="slide04">
+              </div>
+            </div>
+          </div>
+          <div class="swiper_pagination"></div>
+        </div>
+       </div>
+      <!-- container -->
+      <div id="container">
+        <div class="cate_banner">
+          <ul class="cate_banner_icon_area">
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                  <img src="/image/icon01.jpg" alt="icon01">
+                </div>
+                <span class="icon_txt">립/립밤</span>
+              </a>
+            </li>
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                 <img src="/image/icon02.jpg" alt="icon02">
+                </div>
+                <span class="icon_txt">마스카라</span>
+              </a>
+            </li>
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                  <img src="/image/icon03.jpg" alt="icon03">
+                </div>
+                <span class="icon_txt">아이섀도우</span>
+              </a>
+            </li>
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                 <img src="/image/icon04.jpg" alt="icon04">
+                </div>
+                <span class="icon_txt">아이라이너</span>
+              </a>
+            </li>
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                  <img src="/image/icon05.jpg" alt="icon05">
+                </div>
+                <span class="icon_txt">메이크업 툴</span>
+              </a>
+            </li>
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                  <img src="/image/icon06.jpg" alt="icon06">
+                </div>
+                <span class="icon_txt">폼 클렌저</span>
+              </a>
+            </li>
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                  <img src="/image/icon07.jpg" alt="icon07">
+                </div>
+                <span class="icon_txt">수분크림</span>
+              </a>
+            </li>
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                  <img src="/image/icon08.jpg" alt="icon08">
+                </div>
+                <span class="icon_txt">시카크림</span>
+              </a>
+            </li>
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                  <img src="/image/icon09.jpg" alt="icon09">
+                </div>
+                <span class="icon_txt">수분로션</span>
+              </a>
+            </li>
+            <li class="icon xans-record" data-aos="zoom-in">
+              <a href="/html/product_sub.html">
+                <div class="icon_img">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <span class="icon_txt">전체상품</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="best_item_wrap" data-aos="fade-up">
+          <div class="product_inner">
+            <div class="main_title">
+              <h2>
+                <span>BEST ITEM</span>
+              </h2>
+              <a href="/" class="more_btn">전체보기</a>
+            </div>
+            <div class="swiper-container">
+              <ul class="product_list swiper-wrapper">
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img round">
+                      <a href="/html/product_sub.html">
+                        <img src="/image/product01.jpg" alt="product01">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 클렌징 리무버</span>
+                        </a>
+                      </strong>
+                      <ul></ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/html/product_sub.html">
+                        <img src="/image/product02.jpg" alt="product02">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 클렌징 리무버</span>
+                        </a>
+                      </strong>
+                      <ul></ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/html/product_sub.html">
+                        <img src="/image/product03.jpg" alt="product03">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 클렌징 리무버</span>
+                        </a>
+                      </strong>
+                      <ul></ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/html/product_sub.html">
+                        <img src="/image/product04.jpg" alt="product04">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 클렌징 리무버</span>
+                        </a>
+                      </strong>
+                      <ul></ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/html/product_sub.html">
+                        <img src="/image/product05.jpg" alt="product05">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 클렌징 리무버</span>
+                        </a>
+                      </strong>
+                      <ul></ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/html/product_sub.html">
+                        <img src="/image/product06.jpg" alt="product06">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 클렌징 리무버</span>
+                        </a>
+                      </strong>
+                      <ul></ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/">
+                        <img src="/image/product07.jpg" alt="product07">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 클렌징 리무버</span>
+                        </a>
+                      </strong>
+                      <ul></ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/html/product_sub.html">
+                        <img src="/image/product08.jpg" alt="product08">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 클렌징 리무버</span>
+                        </a>
+                      </strong>
+                      <ul></ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skin_care_banner">
+          <div class="skin_care_inner">
+            <div class="main_title">
+              <h2>
+                <span>SKIN CARE</span>
+              </h2>
+              <a href="/" class="more_btn">전체보기</a>
+            </div>
+            <div class="img_area img_zoom round">
+             <a href="/">
+              <img src="/image/main_banner01.jpg" alt="main_banner01">
+             </a>
+            </div>
+            <div class="txt">
+              <h3>자극된 내 피부<br>진정이 필요할 때 -</h3>
+            </div>
+          </div>
+        </div>
+        <ul class="product_list grid3 skin_care_content">
+          <li id="anchor_box" class="swiper-slide xans-record">
+            <div class="thumbnail">
+              <div class="product_img round">
+                <a href="/">
+                  <img src="/image/product05.jpg" alt="product05">
+                </a>
+                <span class="basket">
+                  <img src="/image/basket.png" alt="basket">
+                </span>
+              </div>
+              <div class="promotion">
+                <img src="/image/best.png" alt="best">
+                <img src="/image/new.png" alt="new">
+              </div>
+              <div class="skin_care_content_desc">
+                <strong class="name">
+                  <a href="/">
+                    <span class="title"></span>
+                    <span>EUNOIA 에센셜 오일 립글로즈</span>
+                  </a>
+                </strong>
+                <ul class="spec">
+                  <li class="xans-redord">
+                    <span>수부지 피부에 속부터 잡아주는 수분 미스트
+                    </span>
+                  </li>
+                  <li class="xans-redord-sale">
+                    <del>14,000원</del>
+                    <span>29%</span>
+                    <h4>10,000원</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li id="anchor_box" class="swiper-slide xans-record">
+            <div class="thumbnail">
+              <div class="product_img round">
+                <a href="/">
+                  <img src="/image/product06.jpg" alt="product06">
+                </a>
+                <span class="basket">
+                  <img src="/image/basket.png" alt="basket">
+                </span>
+              </div>
+              <div class="promotion">
+                <img src="/image/best.png" alt="best">
+                <img src="/image/new.png" alt="new">
+              </div>
+              <div class="skin_care_content_desc">
+                <strong class="name">
+                  <a href="/">
+                    <span class="title"></span>
+                    <span>EUNOIA 장벽 수분 로션</span>
+                  </a>
+                </strong>
+                <ul class="spec">
+                  <li class="xans-redord">
+                    <span>끈적이지 않고 산뜻한 라벤터향 크리미 로션
+                    </span>
+                  </li>
+                  <li class="xans-redord-sale">
+                    <del>14,000원
+                    </del>
+                    <span>29%
+                    </span>
+                    <h4>10,000원</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li id="anchor_box" class="swiper-slide xans-record">
+            <div class="thumbnail">
+              <div class="product_img round">
+                <a href="/">
+                  <img src="/image/product07.jpg" alt="product07">
+                </a>
+                <span class="basket">
+                  <img src="/image/basket.png" alt="basket">
+                </span>
+              </div>
+              <div class="promotion">
+                <img src="/image/best.png" alt="best">
+                <img src="/image/new.png" alt="new">
+              </div>
+              <div class="skin_care_content_desc">
+                <strong class="name">
+                  <a href="/">
+                    <span class="title"></span>
+                    <span>EUNOIA 콜라겐 퍼펙트 크림</span>
+                  </a>
+                </strong>
+                <ul class="spec">
+                  <li class="xans-redord">
+                    <span>콜라겐이 가득한 쫀쫀한 텍스처의 크림
+                    </span>
+                  </li>
+                  <li class="xans-redord-sale">
+                    <del>14,000원
+                    </del>
+                    <span>29%
+                    </span>
+                    <h4>10,000원</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li id="anchor_box" class="swiper-slide xans-record">
+            <div class="thumbnail">
+              <div class="product_img round">
+                <a href="/">
+                  <img src="/image/product08.jpg" alt="product08">
+                </a>
+                <span class="basket">
+                  <img src="/image/basket.png" alt="basket">
+                </span>
+              </div>
+              <div class="promotion">
+                <img src="/image/best.png" alt="best">
+                <img src="/image/new.png" alt="new">
+              </div>
+              <div class="skin_care_content_desc">
+                <strong class="name">
+                  <a href="/">
+                    <span class="title"></span>
+                    <span>EUNOIA 세라마이드 스팟 크림</span>
+                  </a>
+                </strong>
+                <ul class="spec">
+                  <li class="xans-redord">
+                    <span>건조한 날씨에 수분감 UP!
+                    </span>
+                  </li>
+                  <li class="xans-redord-sale">
+                    <del>14,000원
+                    </del>
+                    <span>29%
+                    </span>
+                    <h4>10,000원</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li id="anchor_box" class="swiper-slide xans-record">
+            <div class="thumbnail">
+              <div class="product_img round">
+                <a href="/">
+                  <img src="/image/product01.jpg" alt="product01">
+                </a>
+                <span class="basket">
+                  <img src="/image/basket.png" alt="basket">
+                </span>
+              </div>
+              <div class="promotion">
+                <img src="/image/best.png" alt="best">
+                <img src="/image/new.png" alt="new">
+              </div>
+              <div class="skin_care_content_desc">
+                <strong class="name">
+                  <a href="/">
+                    <span class="title"></span>
+                    <span>EUNOIA 클렌징 리무버</span>
+                  </a>
+                </strong>
+                <ul class="spec">
+                  <li class="xans-redord">
+                    <span>한 번에 터치로 강한 세정력
+                    </span>
+                  </li>
+                  <li class="xans-redord-sale">
+                    <del>14,000원
+                    </del>
+                    <span>29%
+                    </span>
+                    <h4>10,000원</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li id="anchor_box" class="swiper-slide xans-record">
+            <div class="thumbnail">
+              <div class="product_img round">
+                <a href="/">
+                  <img src="/image/product02.jpg" alt="product02">
+                </a>
+                <span class="basket">
+                  <img src="/image/basket.png" alt="basket">
+                </span>
+              </div>
+              <div class="promotion">
+                <img src="/image/best.png" alt="best">
+                <img src="/image/new.png" alt="new">
+              </div>
+              <div class="skin_care_content_desc">
+                <strong class="name">
+                  <a href="/">
+                    <span class="title"></span>
+                    <span>EUNOIA 컬링 마스카라</span>
+                  </a>
+                </strong>
+                <ul class="spec">
+                  <li class="xans-redord">
+                    <span>자연스러운 음영감으로 분위기 업데이트
+                    </span>
+                  </li>
+                  <li class="xans-redord-sale">
+                    <del>14,000원
+                    </del>
+                    <span>29%
+                    </span>
+                    <h4>10,000원</h4>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="coupon_banner">
+          <div class="coupon_box">
+            <div class="left">
+              <h3>나의 COUPON ZONE</h3>
+              <p>쿠폰 확인하고 혜택 받자!</p>
+            </div>
+            <div class="right">
+              <span class="blink">Click !</span>
+              <a href="/">
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="best_item_wrap">
+          <div class="product_inner">
+            <div class="main_title">
+              <h2>
+                <span>TIME DEAL</span>
+                <i class="fa-regular fa-bell"></i>
+              </h2>
+              <a href="/" class="more_btn">전체보기</a>
+            </div>
+            <div class="swiper-container">
+              <ul class="product_list swiper-wrapper">
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img round">
+                      <a href="/">
+                        <img src="/image/product01.jpg" alt="product01">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="skin_care_content_desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 에센셜 오일 립글로즈</span>
+                        </a>
+                      </strong>
+                      <ul class="spec">
+                        <li class="xans-redord">
+                          <span>수부지 피부에 속부터 잡아주는 수분 미스트
+                          </span>
+                        </li>
+                        <li class="xans-redord-sale">
+                          <del>14,000원
+                          </del>
+                          <span>29%
+                          </span>
+                          <h4>10,000원</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn_wrap">
+                      <a href="/html/search_sub.html" class="cart_btn">장바구니</a>
+                      <a href="/html/search_sub.html" class="buy_btn">구매하기</a>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/">
+                        <img src="/image/product02.jpg" alt="product02">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="skin_care_content_desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 에센셜 오일 립글로즈</span>
+                        </a>
+                      </strong>
+                      <ul class="spec">
+                        <li class="xans-redord">
+                          <span>수부지 피부에 속부터 잡아주는 수분 미스트
+                          </span>
+                        </li>
+                        <li class="xans-redord-sale">
+                          <del>14,000원
+                          </del>
+                          <span>29%
+                          </span>
+                          <h4>10,000원</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn_wrap">
+                      <a href="/" class="cart_btn">장바구니</a>
+                      <a href="/" class="buy_btn">구매하기</a>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/">
+                        <img src="/image/product03.jpg" alt="product03">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="skin_care_content_desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 에센셜 오일 립글로즈</span>
+                        </a>
+                      </strong>
+                      <ul class="spec">
+                        <li class="xans-redord">
+                          <span>수부지 피부에 속부터 잡아주는 수분 미스트
+                          </span>
+                        </li>
+                        <li class="xans-redord-sale">
+                          <del>14,000원
+                          </del>
+                          <span>29%
+                          </span>
+                          <h4>10,000원</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn_wrap">
+                      <a href="/" class="cart_btn">장바구니</a>
+                      <a href="/" class="buy_btn">구매하기</a>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/">
+                        <img src="/image/product04.jpg" alt="product04">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="skin_care_content_desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 에센셜 오일 립글로즈</span>
+                        </a>
+                      </strong>
+                      <ul class="spec">
+                        <li class="xans-redord">
+                          <span>수부지 피부에 속부터 잡아주는 수분 미스트
+                          </span>
+                        </li>
+                        <li class="xans-redord-sale">
+                          <del>14,000원
+                          </del>
+                          <span>29%
+                          </span>
+                          <h4>10,000원</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn_wrap">
+                      <a href="/" class="cart_btn">장바구니</a>
+                      <a href="/" class="buy_btn">구매하기</a>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/">
+                        <img src="/image/product05.jpg" alt="product05">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="skin_care_content_desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 에센셜 오일 립글로즈</span>
+                        </a>
+                      </strong>
+                      <ul class="spec">
+                        <li class="xans-redord">
+                          <span>수부지 피부에 속부터 잡아주는 수분 미스트
+                          </span>
+                        </li>
+                        <li class="xans-redord-sale">
+                          <del>14,000원
+                          </del>
+                          <span>29%
+                          </span>
+                          <h4>10,000원</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn_wrap">
+                      <a href="/" class="cart_btn">장바구니</a>
+                      <a href="/" class="buy_btn">구매하기</a>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/">
+                        <img src="/image/product06.jpg" alt="product06">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="skin_care_content_desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 에센셜 오일 립글로즈</span>
+                        </a>
+                      </strong>
+                      <ul class="spec">
+                        <li class="xans-redord">
+                          <span>수부지 피부에 속부터 잡아주는 수분 미스트
+                          </span>
+                        </li>
+                        <li class="xans-redord-sale">
+                          <del>14,000원
+                          </del>
+                          <span>29%
+                          </span>
+                          <h4>10,000원</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn_wrap">
+                      <a href="/" class="cart_btn">장바구니</a>
+                      <a href="/" class="buy_btn">구매하기</a>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/">
+                        <img src="/image/product07.jpg" alt="product07">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="skin_care_content_desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 에센셜 오일 립글로즈</span>
+                        </a>
+                      </strong>
+                      <ul class="spec">
+                        <li class="xans-redord">
+                          <span>수부지 피부에 속부터 잡아주는 수분 미스트
+                          </span>
+                        </li>
+                        <li class="xans-redord-sale">
+                          <del>14,000원
+                          </del>
+                          <span>29%
+                          </span>
+                          <h4>10,000원</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn_wrap">
+                      <a href="/" class="cart_btn">장바구니</a>
+                      <a href="/" class="buy_btn">구매하기</a>
+                    </div>
+                  </div>
+                </li>
+                <li id="anchor_box" class="swiper-slide">
+                  <div class="thumbnail">
+                    <div class="product_img">
+                      <a href="/">
+                        <img src="/image/product08.jpg" alt="product08">
+                      </a>
+                      <span class="basket">
+                        <img src="/image/basket.png" alt="basket">
+                      </span>
+                    </div>
+                    <div class="promotion">
+                      <img src="/image/best.png" alt="best">
+                      <img src="/image/new.png" alt="new">
+                    </div>
+                    <div class="skin_care_content_desc">
+                      <strong class="name">
+                        <a href="/">
+                          <span class="title"></span>
+                          <span>EUNOIA 에센셜 오일 립글로즈</span>
+                        </a>
+                      </strong>
+                      <ul class="spec">
+                        <li class="xans-redord">
+                          <span>수부지 피부에 속부터 잡아주는 수분 미스트
+                          </span>
+                        </li>
+                        <li class="xans-redord-sale">
+                          <del>14,000원
+                          </del>
+                          <span>29%
+                          </span>
+                          <h4>10,000원</h4>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn_wrap">
+                      <a href="/" class="cart_btn">장바구니</a>
+                      <a href="/" class="buy_btn">구매하기</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- time_sale 미완성 -->
+        <div class="time_sale">
+          <div class="time_sale_content">
+            <div class="title_area">
+              <h2>타임 세일</h2>
+              <span>시간이 지나면 이 가격은 사라져요!
+              </span>
+            </div>
+            <ul class="prod_list">
+              <li class="anchorBoxId">
+                <div class="prod_list_item">
+                  <div class="sale_count">
+                    <b>07</b><span>일 </span><b>12</b>
+                    <span>시간 </span><b>31</b><span>분 </span>
+                    <b>25</b><span>초 </span>
+                  </div>
+                  <div class="thumbnail">
+                    <div class="thumbnail_price">51%</div>
+                    <div class="thumbnail_sold">
+                      <div class="marquee">
+                        <div>
+                          <h2>SOLD OUT</h2>
+                          <b>해당상품은 품절되었습니다.</b>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="thumbnail_img">
+                      <img src="https://vrthumb.clipartkorea.co.kr/2023/11/22/ti436a45001.jpg" alt="thumbnail_img01">
+                    </div>
+                  </div>
+                  <div class="description">
+                    <div class="name">
+                      <a href="/">
+                        <span>EUNOIA 장벽 수분 크림</span>
+                      </a>
+                    </div>
+                    <ul class="spec">
+                      <li class="subname">끈적이지 않고 산뜻한 라벤더 바디로션</li>
+                      <li class="price"><strong>51%</strong>6,520원</li>
+                      <li class="sale_price"><del>13,050원</del></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="pagination">
+              <span class="swiper-pagination-bullet">
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="title_area">
+            <h2>베스트 리뷰</h2>
+            <span>고객님들의 내돈내산 솔직 후기를 만나보세요</span>
+          </div>
+          <ul>
+            <div class="swiper_container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240522/4147712/4147712_17192163253172_big.jpg?w=1200" alt="review01">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h2>EUNOIA 컬링 마스카라</h2>
+                    <p>속눈썹 탈모 협회에서 왔습니다.. 돌고돌아 드디어 정착템이 되었네용<br>
+                      가늘고 숱이 없는 분들은 무조건 이걸 쓰셔야합니다..
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20240522/4147712/detail_4147712_17192163315050_big.jpg?w=1200" alt="review02">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 에센셜 오일 립글로즈</h2>
+                    <p>다른 컬러를 원래 가지고 있었는데 윈디아 컬러도 궁금해서 구매했어요~! 발림성도 너무 좋고 색도 너무 예뻐여.. 여름 뮤트톤이면 무난하게 바를 수 있을 거 같고 쿨톤 베이스립으로도 활용도 좋을 거 같아요!
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20240522/4147712/detail_4147712_17192163430169_big.jpg?w=1200" alt="review03">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 립앤치크 라즈베리</h2>
+                    <p>색은 이쁘지만 발색력은 립밤 수준이고 길지않아요 그래도 촉촉해서 편하게 바르기좋아요. 건조한편이라 잘끼는데 오에니르는 입술끼임없이 립밥같아 좋아요
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376028/detail_3376028_17024450541462_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/goods_img/20230621/3376022/3376022_17024451867779_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 뮤티드 블러셔</h2>
+                    <p>생각보다 블색이 약하긴해요! 근데 색이 너무 예뻐서 만족스러워요 ㅎㅎ<br>
+                      굉장히 차분한 느낌의 라벤더 컬러예요 너무 뽀용하지 않아서 그게 제일 마음에 들어요!! 재구매각인 것 같아요
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376022/detail_3376022_17024451979628_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376022/detail_3376022_17024452035069_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240522/4147712/4147712_17192163253172_big.jpg?w=1200" alt="review01">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 컬링 마스카라</h2>
+                    <p>속눈썹 탈모 협회에서 왔습니다.. 돌고돌아 드디어 정착템이 되었네용<br>
+                      가늘고 숱이 없는 분들은 무조건 이걸 쓰셔야합니다..
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20240522/4147712/detail_4147712_17192163315050_big.jpg?w=1200" alt="review02">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 에센셜 오일 립글로즈</h2>
+                    <p>다른 컬러를 원래 가지고 있었는데 윈디아 컬러도 궁금해서 구매했어요~! 발림성도 너무 좋고 색도 너무 예뻐여.. 여름 뮤트톤이면 무난하게 바를 수 있을 거 같고 쿨톤 베이스립으로도 활용도 좋을 거 같아요!
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20240522/4147712/detail_4147712_17192163430169_big.jpg?w=1200" alt="review03">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 립앤치크 라즈베리</h2>
+                    <p>색은 이쁘지만 발색력은 립밤 수준이고 길지않아요 그래도 촉촉해서 편하게 바르기좋아요. 건조한편이라 잘끼는데 오에니르는 입술끼임없이 립밥같아 좋아요
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376028/detail_3376028_17024450541462_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/goods_img/20230621/3376022/3376022_17024451867779_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 뮤티드 블러셔</h2>
+                    <p>생각보다 블색이 약하긴해요! 근데 색이 너무 예뻐서 만족스러워요 ㅎㅎ<br>
+                      굉장히 차분한 느낌의 라벤더 컬러예요 너무 뽀용하지 않아서 그게 제일 마음에 들어요!! 재구매각인 것 같아요
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376022/detail_3376022_17024451979628_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376022/detail_3376022_17024452035069_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376028/detail_3376028_17024450541462_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/goods_img/20230621/3376022/3376022_17024451867779_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 뮤티드 블러셔</h2>
+                    <p>생각보다 블색이 약하긴해요! 근데 색이 너무 예뻐서 만족스러워요 ㅎㅎ<br>
+                      굉장히 차분한 느낌의 라벤더 컬러예요 너무 뽀용하지 않아서 그게 제일 마음에 들어요!! 재구매각인 것 같아요
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376022/detail_3376022_17024451979628_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376022/detail_3376022_17024452035069_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240522/4147712/4147712_17192163253172_big.jpg?w=1200" alt="review01">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 컬링 마스카라</h2>
+                    <p>속눈썹 탈모 협회에서 왔습니다.. 돌고돌아 드디어 정착템이 되었네용<br>
+                      가늘고 숱이 없는 분들은 무조건 이걸 쓰셔야합니다..
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20240522/4147712/detail_4147712_17192163430169_big.jpg?w=1200" alt="review03">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 립앤치크 라즈베리</h2>
+                    <p>색은 이쁘지만 발색력은 립밤 수준이고 길지않아요 그래도 촉촉해서 편하게 바르기좋아요. 건조한편이라 잘끼는데 오에니르는 입술끼임없이 립밥같아 좋아요
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376028/detail_3376028_17024450541462_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/goods_img/20230621/3376022/3376022_17024451867779_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 뮤티드 블러셔</h2>
+                    <p>생각보다 블색이 약하긴해요! 근데 색이 너무 예뻐서 만족스러워요 ㅎㅎ<br>
+                      굉장히 차분한 느낌의 라벤더 컬러예요 너무 뽀용하지 않아서 그게 제일 마음에 들어요!! 재구매각인 것 같아요
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376022/detail_3376022_17024451979628_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20230621/3376022/detail_3376022_17024452035069_big.jpg?w=1200" alt="review04">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 콜라겐 퍼펙트 크림</h2>
+                    <p>폭신한 장벽을 쌓아줘서 계절감 상관없이 잘 쓰고 있어요<br>
+                      셀 수 없을 만큼 많이 사용해서 입 아프네요 :)
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/goods_img/20240522/4147712/4147712_17192163253172_big.jpg?w=1200" alt="review01">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 컬링 마스카라</h2>
+                    <p>속눈썹 탈모 협회에서 왔습니다.. 돌고돌아 드디어 정착템이 되었네용<br>
+                      가늘고 숱이 없는 분들은 무조건 이걸 쓰셔야합니다..
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img">
+                    <a href="/">
+                      <img src="https://image.msscdn.net/thumbnails/images/prd_img/20240522/4147712/detail_4147712_17192163315050_big.jpg?w=1200" alt="review02">
+                    </a>
+                  </div>
+                  <div class="desc">
+                    <div class="icon_wrap">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h2>EUNOIA 에센셜 오일 립글로즈</h2>
+                    <p>다른 컬러를 원래 가지고 있었는데 윈디아 컬러도 궁금해서 구매했어요~! 발림성도 너무 좋고 색도 너무 예뻐여.. 여름 뮤트톤이면 무난하게 바를 수 있을 거 같고 쿨톤 베이스립으로도 활용도 좋을 거 같아요!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+          <div class="more_btn"><a href="/">리뷰 더보기</a></div>
+        </div>
+        <div class="answer">
+          <div class="title_area">
+            <h2>무엇이든 물어보세요</h2>
+            <span>유노이아 스킨케어 솔루션이 궁금하세요?</span>
+          </div>
+          <ul class="answer_inner">
+            <div class="toggle">
+              <div class="list">
+              <div class="title">
+                <a href="/">&nbsp 유노이아는 오프라인 매장이 있나요?</a>
+                <div class="btn">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <ul>저희 제품은 올리브영에 입점 되어져 있습니다. <br>고객님의 만족을 위해 항상 노력하겠습니다.
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="toggle">
+              <div class="list">
+              <div class="title">
+                <a href="/">&nbsp 제품은 평균 배송일이 어떤가요?</a>
+                <div class="btn">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <ul>저희 제품은 일반적으로 주문 후 3~5일 이내에 배송됩니다. 기본 배송 옵션 외에도 빠른 배송 옵션을 선택하실 수 있으며, 추가 요금이 부과될 수 있습니다. 주문이 완료되면 이메일로 배송 추적 번호를 보내드리며, 이를 통해 배송 상태를 실시간으로 확인하실 수 있습니다. 또한, 저희는 안전하고 신뢰할 수 있는 배송 파트너와 협력하여 제품이 손상 없이 고객님께 전달되도록 최선을 다하고 있습니다. 배송 관련 문의 사항이 있으시면 언제든지 고객 서비스 센터로 연락주시기 바랍니다. 고객님의 만족을 위해 항상 노력하겠습니다.
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="toggle">
+              <div class="list">
+              <div class="title">
+                <a href="/">&nbsp 반품 및 교환 정책은 무엇인가요?</a>
+                <div class="btn">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <ul>저희는 고객님께서 구매하신 제품에 완전히 만족하시길 바랍니다. 제품 수령 후 30일 이내에 반품 및 교환이 가능합니다. 반품을 원하시는 경우, 제품이 사용되지 않고 원래 상태와 포장으로 반환되어야 합니다. 교환 또한 동일한 조건이 적용되며, 원치 않는 제품을 반환하고 새로운 제품을 받으실 수 있습니다. 반품 및 교환 절차에 대해서는 고객 센터 페이지에서 자세한 안내를 확인하실 수 있으며, 필요 시 고객 서비스 센터에 연락주시면 친절하게 도와드리겠습니다. 반품이 승인되면 환불은 원래 결제 수단으로 처리되며, 환불 처리 시간은 결제 방법에 따라 다를 수 있습니다.
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="toggle">
+              <div class="list">
+              <div class="title">
+                <a href="/">&nbsp 결제 방법은 어떤 것들이 있나요?</a>
+                <div class="btn">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <ul>저희는 고객님께서 보다 편리하고 유연하게 결제할 수 있도록 다양한 결제 수단을 제공하고 있습니다. 먼저, 신용카드 결제가 가능합니다. Visa, MasterCard, American Express 등 주요 카드사를 포함한 모든 주요 신용카드를 지원하며, 결제 과정은 간단하고 빠릅니다. 직불카드 결제도 지원하여, 직접 연결된 은행 계좌를 통해 안전하고 신속하게 결제하실 수 있습니다. 또한, 온라인 결제 시스템인 페이팔을 통해서도 결제하실 수 있습니다. 페이팔은 전 세계적으로 널리 사용되는 안전한 결제 수단으로, 간편하게 로그인하여 결제를 완료할 수 있습니다. 페이팔 계정에 신용카드나 은행 계좌를 연동하면 더욱 편리하게 이용하실 수 있습니다. 이 외에도, 일부 지역에서는 현금 결제나 은행 송금도 가능합니다. 현금 결제는 상품 수령 시 직접 결제하는 방식으로, 온라인 주문 후 현장에서 결제하고 상품을 받으실 수 있습니다. 은행 송금의 경우, 지정된 계좌로 금액을 이체하여 결제하는 방식으로, 주문 후 안내된 계좌 정보로 송금하시면 됩니다. 결제 과정 중 문제가 발생하거나 궁금한 사항이 있으시면 언제든지 고객 서비스 센터로 연락해 주시기 바랍니다. 고객님의 결제 정보는 최신 보안 기술로 암호화되어 안전하게 보호되며, 저희는 고객님의 개인정보 보호를 최우선으로 하고 있습니다. 보다 자세한 결제 옵션과 관련 정보는 결제 페이지에서 확인하실 수 있습니다. 고객님의 편리한 쇼핑을 위해 항상 노력하겠습니다.
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="toggle">
+              <div class="list">
+              <div class="title">
+                <a href="/">&nbsp 제품 보증 기간은 어떻게 되나요?</a>
+                <div class="btn">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="content">
+                <ul>저희 제품의 보증 기간은 제품의 종류에 따라 다를 수 있습니다. 보증 기간과 조건은 각 제품 패키지나 제품 설명서에 명시되어 있습니다. 일반적으로, 전자 제품의 경우 1년의 보증 기간이 제공되며, 이 기간 동안 제품에 결함이 발생하면 무상 수리를 받을 수 있습니다. 보증 기간 내에 문제가 발생하면, 고객 서비스 센터로 연락하여 보증 서비스 신청 방법을 안내받으실 수 있습니다. 보증이 적용되지 않는 경우에도 유료 수리 서비스를 제공하고 있으니, 언제든지 문의해 주시기 바랍니다. 저희는 고객님의 만족을 위해 최선을 다하고 있습니다.
+                </ul>
+              </div>
+            </div>
+            </div>
+          </ul>
+        </div>
+        <div class="skin_care_banner">
+          <div class="skin_care_inner margin_bt">
+            <div class="main_title">
+              <h2>
+                <span>뷰티라인 BEST</span>
+              </h2>
+              <a href="/" class="more_btn">전체보기</a>
+            </div>
+            <div class="img_area img_zoom round">
+             <a href="/">
+              <img src="/image/main_banner02.jpg" alt="main_banner02">
+             </a>
+            </div>
+            <div class="txt">
+              <h3>자극된 내 피부<br>진정이 필요할 때 -</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- popup -->
+      <div class="popup_wrap" id="popup">
+        <div class="popup_layer">
+          <div class="popup_box">
+            <div class="popup_cont">
+              <div class="slider" id="slider">
+                <div class="slide-track">
+                  <div class="slide"><img src="https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/550/10/0000/0017/A00000017430935ko.jpg?l=ko" alt=""></div>
+                  <div class="slide"><img src="https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/550/10/0000/0022/A00000022752117ko.jpg?l=ko" alt=""></div>
+                  <div class="slide"><img src="https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/550/10/0000/0017/A00000017430935ko.jpg?l=ko" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="popup_footer">
+              <button id="closeToday">오늘 그만 보기</button>
+              <button id="closeOnce">팝업 닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  footer  -->
+      <div id="footer">
+        <div class="inner">
+          <div class="footer_tit">CONTACT US</div>
+        <div class="footer01 ">
+    <ul>
+      <li>
+          <h3>고객센터</h3>
+          <p class="tel">031-628-6380</p>
+      </li>
+      <li>
+          <p class="time">월 ~ 금 :  09 : 00 ~ 18 : 00( * 토, 일, 공휴일 휴무 )</p>
+      </li>
+    </ul>
+        </div>
+    
+        <div class="footer02">
+        <div class="footer_info">
+          <div id="acco">
+    <h3>사업자정보</h3>
+    <div class="info">
+        <span>법인명 : EUNOIA</span> <span>대표자 : 굿디몰디자인</span><br><span>사업자등록번호 : 202-67-00083 <font><a href="#none" onclick="window.open">[사업자정보확인]</a></font></span><br><span>통신판매업 신고 : 2016-성남분당-0137</span> <span>팩스 : 031-628-6381</span> <br><span>주소 : 13494 경기도 성남시 분당구 대왕판교로 670 (삼평동) 유스페이스2</span>
+        <ul class="utilMenu">
+            <li><a href="/sub/brand01.html">회사소개</a></li>
+            <li><a href="/member/agreement.html">이용약관</a></li>
+            <li><a href="/member/privacy.html">개인정보취급방침</a></li>
+            <li><a href="/shopinfo/guide.html">이용안내</a></li>
+        </ul>
+</div>
+          </div>
+          </div>
+        </div>
+            
+        <div class="footer03">
+      <p class="copyright">© 2025 All rights reserved.</p>
+    <ul class="footer_sns">
+      <li><a href="//www.facebook.com" target="_blank"><i class="xi-facebook"></i></a></li>
+      <li><a href="//www.instagram.com" target="_blank"><i class="xi-instagram"></i></a></li>
+      <li><a href="//www.youtube.com" target="_blank"><i class="xi-youtube-play"></i></a></li>                    
+    </ul>
+        </div>     
+        </div>
+      </div>  
+    </section>
+  </section>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- AOS CDN JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 메인 script -->
+  <script src="/js/js.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

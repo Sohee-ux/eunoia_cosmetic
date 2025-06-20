@@ -1,0 +1,32 @@
+@media (max-width:599px) {
+    #wrap{border-width: 0;}
+    #visual{width: 100%; position: relative;}
+    #visual .layer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+      }
+    #visual .layer h2{font-size: 22px !important;}
+    #visual .layer span{font-size: 16px !important;}
+    #wrap .header_top_rigth_icon{display: flex; gap: 8px;}
+    #wrap .header_top_rigth_icon .search_wrap .search i{font-size: 17px;}
+    #wrap .header_top_rigth_icon .search_wrap .user i{margin-right: 5px;}
+    #wrap .header_top_rigth_icon .cart_wrap .cart img{width: 19px;}
+    #main ul.grid3 .thumbnail .product_img img{
+      max-width: 130px;
+    }
+}
+
+@media (max-width:1299px) {
+    #left_wrap{display: none;}
+    #right_wrap{display: none;}
+    #footer .inner{width: 100%; margin-bottom: 40px !important;}
+    .coupon_banner .left h3{font-size: 16px !important;}
+}

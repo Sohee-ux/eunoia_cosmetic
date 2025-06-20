@@ -1,0 +1,39 @@
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* text color */
+:root{
+  --black:#171717;
+  --dark-black:#333333;
+  --dim-black:#555555;
+  --silver-black:#777777;
+  --light-black:#999999;
+  --dark-gray:#BDBDBD;
+  --dim-gray:#DDDDDD;
+  --silver-gray:#EEEEEE;
+  --light-gray:#F5F5F5;
+  --cloudy-gray:#F9F9F9;
+  --white:#FFFFFF;
+}
+
+/* object color */
+:root{
+  --coral-point:#F83C47;
+  --pinkInde-point:#CE666B;
+  --pink-point:#FF8773;
+  --Light-point:#FFC4B6;
+  --yellow-light:#F5D300;
+  --color-kakao: #fee500;
+  --yellow:#FFB300;
+  --orange-point:#FF9C40;
+  --orangeDark-point:#DE773F;
+  --blue-point:#2547d7;
+  --red-point:#ff0033;
+  --green-point:#00b833;
+  --navy:#131726;
+  --navy-point:#001C48;
+  --gray-point:#9CA8B0;
+  --box-shadow: 0 10px 10px #0000002a;
+}
+
